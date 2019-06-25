@@ -1,0 +1,8 @@
+li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.ui.card {
+    margin-bottom: 100px;
+}
