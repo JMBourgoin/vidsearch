@@ -7,9 +7,13 @@ class VidList extends React.Component {
         this.state = {};
     }
 vids = () => {
-    const list = this.props.vids.map((vid, idx) => {
+    const filteredList = this.props.vids.filter(vid => {
+        return vid.id.kind === 'youtube#video';
+    });
+
+    const list = filteredList.map((vid, idx) => {
         return (
-            <li key={idx}><VidListItem video={vid} /></li>
+            <li key={idx}><VidListItem onVideoSelect={this.props.onVideoSelect} video={vid} /></li>
         )
     });
     return list;
@@ -20,7 +24,7 @@ vids = () => {
         
         return (
             <div>
-                <ul>
+                <ul className="vidsList">
                     {this.vids()}
                 </ul>
             </div>

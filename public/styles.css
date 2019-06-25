@@ -1,8 +1,43 @@
 li {
     list-style: none;
-    margin-bottom: 20px;
+    margin: 0px 20px 20px 0px;
 }
 
 .ui.card {
     margin-bottom: 100px;
+}
+
+.not-visible {
+    display: none;
+}
+
+.curtains {
+    width: 560px;
+    height: 315px;
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.vid-components {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 200px;
+}
+
+.vid-list {
+    height: 80vh;
+    border-right: solid .5px lightgrey;
+    margin-top: 20px;
+    max-width: 40vw;
+    min-width: 40vw;
+}
+
+.vidsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

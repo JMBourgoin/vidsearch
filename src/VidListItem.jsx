@@ -5,9 +5,10 @@ const VidListItem = (props) => {
    const title = vid.snippet.title;
    const description = vid.snippet.description;
    const thumbnailURL = vid.snippet.thumbnails.medium.url;
+   const onVideoSelect = props.onVideoSelect;
 
     return (
-        <div className="ui card">
+        <div onClick={ () => { onVideoSelect(vid) } } className="ui card">
             <div className="image">
              <img src={thumbnailURL} alt={title}/>
             </div>
