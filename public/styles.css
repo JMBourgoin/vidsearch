@@ -41,3 +41,8 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.ui.segment {
+    margin: 50px 50px;
+    top: 10px;
+}
